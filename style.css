@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #EEE2DC;
+    color: #EDC7B7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#games {
+    display: grid;
+    height: 80%;
+}
+
+#play-areas {
+    text-align: center;
+    margin: 10% 0;
+}
+
+
+#score-areas, h5, span {
+    background-color: white;
+    margin: 50px 0;
+    font-size: 20px;
+    color: #123C68;
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    font-size: 60px;
+    padding: 10px;
+    box-shadow: 5px 10px 10px #888888;
+    color: #AC3B61;
+    background-color: #EDC7B7;
+    border-radius: 5px;
+    border-color: #EDC7B7;
+    margin: 5px 19px;
+    transition: 0.5s;
+}
+
+#player-win {
+    background-color: #123C68;
+}
+
+button:hover {
+    color: #EDC7B7;
+    background-color: #AC3B61;
+}
+
+.results-button {
+    color: white;
+    background-color: #123C68;
+    border-color: #888888;
+}
+
+.results-button:hover {
+    color: #123C68;
+    background-color: white;
+    border-color: #888888;
+}
+
+/*h5, span {
+    font-size: 20px;
+    color: #123C68;
+    padding: 5px;
+    margin: 5px;
+}*/
+
+
+
+
+
+body {
+    margin: 10px;
+    background-color: #EDC7B7;
+}
+
+#score-areas {
+    width: 300px;
+    border-style: outset;
+    border-width: 1px;
+    box-shadow: 10px 10px 5px #123C68;
+}
+
+#results {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.8s;
+}
+
+#results-contents {
+    width: 80%;
+    /*height: 200px;*/
+    background-color: #123C68;
+    color: white;
+    margin: 20px auto;
+    padding: 50px;
+    top: 50px;
+    text-align: center;
+}
+
+#results-contents h3 {
+    background-color: #123C68;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+img {
+    margin: 0px 10px 0px 5px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 5px #123C68;
+    border-style: outset;
+}
+
+#cmp-user {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-style: inset;
+    border-width: 5px;
+}
+
+#cmp-user div {
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+h5#player-win {
+    font-size: 50px;
+}
+
+div#results {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    color: #EDC7B7;
+    font-size: 20px;
+}
+
+#menu button {
+    font-size: 10px;
+    background-color: #123C68;
+    color: white;
+}
+
+#menu button:hover {
+    background-color: white;
+    color: #123C68;
+}
+
+/* the following code is reference from web tutorials about snackbar (137-180) */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+#gameplay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#gameplay-contents {
+    margin: 5%;
+    padding: 20px 0px;
+    background-color: #123C68;
+    color: white;
+    font-size: 20px;
+}
+
+#gameplay-contents h3 {
+    margin: 20px;
+    padding: 20px 0px;
+    background-color: #123C68;
+    color: white;
+    font-size: 50px;
+}
+
+#gameplay-contents p {
+    margin: 20px;
+    padding: 20px 0px;
+    background-color: #123C68;
+    color: white;
+    font-size: 20px;
+}
+
+#gameplay-contents button {
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    button {
+        margin: 0px 10px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h5 {
+        font-size: 18px;
+    }
+    button {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #play-areas button {
+        margin: 0px 5px;
+        display: block;
+        width: 100%;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
